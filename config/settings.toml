@@ -1,0 +1,32 @@
+# [default]
+# redis_rdb_path = "/caminho/para/dump.rdb"
+# redis_aof_path = "/caminho/para/appendonly.aof"
+# s3_backup_folder = "redis-backups"
+
+# [development]
+# debug = true
+
+# [production]
+# debug = false
+
+#[default]
+# Configurações padrão
+redis_rdb_path = "/path/to/redis/dump.rdb"
+redis_aof_path = "/path/to/redis/appendonly.aof"
+
+#[aws]
+aws_access_key_id = "your_aws_access_key_id"
+aws_secret_access_key = "your_aws_secret_access_key"
+aws_bucket_name = "your_s3_bucket_name"
+
+##[oracle]
+oracle_key_file = "/path/to/your/oracle/key_file.pem"
+oracle_bucket_name = "your_oracle_bucket_name"
+oracle_namespace = "your_oracle_namespace"
+
+#[google]
+google_credentials_file = "/path/to/your/google/credentials.json"
+google_bucket_name = "your_google_bucket_name"
+
+#[nfs]
+nfs_backup_path = "/path/to/nfs/backup"

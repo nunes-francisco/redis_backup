@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redis_backup"
+version = "0.1.0"
+description = "Pacote de backup do redis"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Francisco Nunes", email = "fra_nunez@hotmail.com"}
+]
+dependencies = [
+  # Liste aqui as dependências do seu pacote, por exemplo:
+  # "requests >= 2.25.1",
+  "boto3 >= 1.35.0",
+  "schedule >= 1.2.2",
+  "loguru >= 0.7.2",
+  "click >= 8.1.7",
+  "google-cloud-storage >= 2.18.2",
+  "pydantic_settings >= 2.4.0",
+  "pydantic >= 2.8.2",
+]
+
+[project.scripts]
+redis_backup = "redis_backup.main:main"
+redis_backupctl = "redis_backup.cli:cli"
+
+[project.urls]
+homepage = "https://github.com/seu_usuario/meu_projeto"

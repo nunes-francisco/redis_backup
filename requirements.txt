@@ -1,0 +1,11 @@
+boto3
+schedule
+loguru
+dynaconf
+click
+google-cloud-storage
+pydantic_settings
+pydantic
+uvicorn
+fastapi
+oci

@@ -1,0 +1,7 @@
+config = {
+    "user": "<your_user_ocid>",
+    "key_file": "<full_path_to_your_private_key>",
+    "fingerprint": "<fingerprint_of_your_public_key>",
+    "tenancy": "<your_tenancy_ocid>",
+    "region": "<your_oci_region>"
+}
