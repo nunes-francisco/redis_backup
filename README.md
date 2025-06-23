@@ -1,5 +1,7 @@
 # redis_backup
 
+![](assets/redis_bkp.png)
+
 Reliza backup do redis e armazena em S3AWS
 
 ## Testes de restore com Endpoints
@@ -46,7 +48,7 @@ Declare a variável diretamente no shell, ou adicione-as ao arquivo .bashrc ou p
 export REDIS_AOF_PATH=path_redis
 ```
 
-Editando arquivo ```.bashrc```:
+Editando arquivo ``.bashrc``:
 
 ```shell
 vim .bashrc
@@ -113,4 +115,3 @@ NFS_BACKUP_PATH=/mnt/redis
 REDIS_RDB_PATH=path/redis/rdb
 REDIS_AOF_PATH=path/redis/aof
 ```
-
